@@ -4,12 +4,6 @@ class Student():
     number_bilet = 0
     avg_grade = 0
     name = "Васильев"
-    def __init__(self, course, group_name, number_bilet, avg_grade, name):
-        self.course = course
-        self.group_name = group_name
-        self.number_bilet = number_bilet
-        self.avg_grade = avg_grade
-        self.name = name
 
     def addFio(self):
         self.mname = input("Введите имя: ")
@@ -27,14 +21,13 @@ class Student():
 
 
 
-s = Student
-print(Student.goToCollege(s))
-print(Student.goToCollege(s))
+s = Student()
+print(s.goToCollege())
+print(s.goToCollege())
 print(s.avg_grade)
 print(s.name)
-Student.addFio(s)
+s.addFio()
 print(s.name)
-k = Student
+k = Student()
 print(k.name)
-print(Student.upCourse(s))
-
+print(s.upCourse())
